@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGradient" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+
+    <filter id="glowYellow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowWhite" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Apple-style squircle background -->
+  <path
+    d="M256 32
+       C370 32 480 80 480 192
+       V320
+       C480 432 370 480 256 480
+       C142 480 32 432 32 320
+       V192
+       C32 80 142 32 256 32Z"
+    fill="url(#bgGradient)"
+  />
+
+  <!-- AI Sparkles -->
+  <g filter="url(#glowWhite)" stroke="#ffffff" stroke-width="10" stroke-linecap="round">
+    <path d="M256 96V118"/>
+    <path d="M245 107H267"/>
+  </g>
+
+  <g opacity="0.9" filter="url(#glowWhite)" stroke="#ffffff" stroke-width="7" stroke-linecap="round">
+    <path d="M198 128V142"/>
+    <path d="M191 135H205"/>
+  </g>
+
+  <g opacity="0.9" filter="url(#glowWhite)" stroke="#ffffff" stroke-width="7" stroke-linecap="round">
+    <path d="M314 136V150"/>
+    <path d="M307 143H321"/>
+  </g>
+
+  <!-- Book -->
+  <g
+    stroke="#ffffff"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- Left page -->
+    <path d="M144 182C176 170 214 170 248 188V342C214 324 176 324 144 336V182Z"/>
+
+    <!-- Right page -->
+    <path d="M368 182C336 170 298 170 264 188V342C298 324 336 324 368 336V182Z"/>
+
+    <!-- Center spine -->
+    <path d="M256 188V342"/>
+  </g>
+
+  <!-- Digital Pulse Wave -->
+  <path
+    d="M262 250
+       H290
+       L310 220
+       L334 286
+       L356 238
+       H380"
+    stroke="#fef08a"
+    stroke-width="14"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glowYellow)"
+  />
+
+  <!-- Subtle Accent Dots -->
+  <circle cx="310" cy="220" r="5" fill="#fef08a"/>
+  <circle cx="334" cy="286" r="5" fill="#fef08a"/>
+  <circle cx="356" cy="238" r="5" fill="#fef08a"/>
+</svg>
