@@ -957,7 +957,7 @@ export const lessonsDetails: Record<"en" | "as", Record<string, LessonDetail>> =
         explanation: "কম্পিউটাৰে মানুহৰ আৱেগ বুজি পোৱা, সহানুভূতিশীল হোৱা আৰু নৈতিক সিদ্ধান্ত লোৱাত অসুবিধা পায়, সেয়েহে এই মানৱীয় দক্ষতাবোৰ সদায় সুৰক্ষিত।"
       }
     },
-    "exp-03": {
+    "str-03": {
       id: "str-03", // Corrected id mapping mismatch key
       title: "AI নীতি আৰু নৈতিকতা",
       subtitle: "বুদ্ধিমান মেচিনৰ নিয়ন্ত্ৰণ আৰু বিকাশকারোৰ দায়িত্ব নিৰ্ধাৰণ",
@@ -1014,66 +1014,6 @@ export const lessonsDetails: Record<"en" | "as", Record<string, LessonDetail>> =
   }
 };
 
-// Fix the ID mapping key for str-03 in the Assamese dictionary
-lessonsDetails.as["str-03"] = lessonsDetails.as["exp-03"]; // Remap
-delete lessonsDetails.as["exp-03"];
-// Restore original exp-03
-lessonsDetails.as["exp-03"] = {
-  id: "exp-03",
-  title: "মৌলিক লজিক গেট",
-  subtitle: "যন্ত্ৰৰ চিন্তা কৰাৰ মূল উপাদানসমূহ",
-  readTime: "৮ মিনিট পঢ়ক",
-  author: "ৰকিবুল আৰু AI-ৰ দ্বাৰা সংকলিত",
-  publishedDate: "জুন ২০২৬",
-  introduction: "প্ৰতিটো স্মাৰ্ট সঁজুলি, চুপাৰ কম্পিউটাৰ আৰু AI মডেলৰ একেবাৰে কেন্দ্ৰবিন্দুত এটা সৰল ধাৰণা থাকে: লজিক বা যুক্তি। লজিক গেট হৈছে কম্পিউটাৰ চিপৰ ভিতৰত থকা সৰু সৰু সিদ্ধান্ত গ্ৰহণকাৰী সঁজুলি। ইহঁতে বৈদুতিক সংকেত গ্ৰহণ কৰে আৰু সৰল নিয়মৰ আধাৰত সিদ্ধান্ত লয়।",
-  sections: [
-    {
-      heading: "IF আৰু THEN ৰ নিয়মসমূহ",
-      paragraphs: [
-        "কম্পিউটাৰে বাইনাৰী ভাষা বুজি পায়—য'ত সকলো বস্তু হয় 'True' (১) নহয় 'False' (০)। আমি এই ইনপুটবোৰ মিলাই সিদ্ধান্ত লওঁ।",
-        "এটা AND গেটে কেৱল তেতিয়াহে True আউটপুট দিয়ে যেতিয়া সকলো ইনপুট True হয়। ধৰি লওক: IF আপোনাৰ হাতত চাবি আছে AND চাবিটো ঘূৰাইছে, THEN গাড়ীখন ষ্টাৰ্ট হ'ব।",
-        "আৰু এটা OR গেটে True আউটপুট দিয়ে যদি কমেও এটা ইনপুট True হয়: IF বৰষুণ দিছে OR আপুনি ফুলনিৰ পাইপডাল খুলি দিছে, THEN ঘাঁহখিনি তিতি যাব।"
-      ]
-    },
-    {
-      heading: "সৰল নিয়মৰ পৰা ডাঙৰ মগজুলৈ",
-      paragraphs: [
-        "এনেকুৱা লাখ লাখ লজিক গেট একেলগে মিলাই আমি কম্পিউটাৰ চিপবোৰ সাজোঁ। AI মডেলে প্ৰতি ছেকেণ্ডত লাখ লাখ গাণিতিক লজিক খোজ ব্যৱহাৰ কৰি আপোনাৰ পৰৱৰ্তী শব্দটো অনুমান কৰে বা ভাষা অনুবাদ কৰে।",
-        "AI যিমানেই স্মাৰ্ট যেন নালাগক কিয়, ই কেৱল লাখ লাখ সৰু ছুইচৰ দ্বাৰা কৰা True/False পৰীক্ষাহে।"
-      ]
-    }
-  ],
-  keyTakeaways: [
-    "কম্পিউটাৰে সম্পূৰ্ণৰূপে বাইনাৰী লজিক: ১ (True) আৰু ০ (False) ব্যৱহাৰ কৰে।",
-    "লজিক গেট (যেনে AND, OR, NOT) হ'ল হাৰ্ডৱেৰৰ মূল সঁজুলি যিবোৰে হিচাপ-নিকাচ কৰে।",
-    "AI মডেলবোৰ এনেকুৱা লাখ লাখ লজিক সিদ্ধান্তৰ ওপৰতে নিৰ্মাণ কৰা হয়।"
-  ],
-  sources: [
-    {
-      title: "লজিক গেট কেনেকৈ কাম কৰে",
-      authorOrPublisher: "Computerphile (YouTube)",
-      url: "https://www.youtube.com/watch?v=gI-qXk7XojA",
-      type: "video"
-    },
-    {
-      title: "ডিজিটেল ইলেক্ট্ৰনিক্সত লজিক গেট",
-      authorOrPublisher: "GeeksforGeeks",
-      url: "https://www.geeksforgeeks.org/logic-gates-in-digital-electronics/",
-      type: "article"
-    }
-  ],
-  quiz: {
-    question: "যদি এটা স্বয়ংক্ৰিয় দুৱাৰ কেৱল তেতিয়াহে খোল খায় যেতিয়া কোনোবা মানুহ সন্মুখত থিয় হয় AND সুৰক্ষা ক'ডটো শুদ্ধ হয়, তেন্তে তাত কোনটো লজিক গেট ব্যৱহাৰ হৈছে?",
-    options: [
-      "OR গেট",
-      "NOT গেট",
-      "AND গেট",
-      "XOR গেট"
-    ],
-    answerIndex: 2,
-    explanation: "যিহেতু দুয়োটা চৰ্ত পুৰণ হ'm লাগিব (মানুহ থকা AND ক'ড শুদ্ধ হোৱা) দুৱাৰখন খোল খাবলৈ, সেয়েহে ইয়াত AND গেট ব্যৱহাৰ কৰা হৈছে।"
-  }
-};
 
 // ==========================================
 // APPEND NEW LESSONS: TRADITIONAL VS AI PARADIGM
